@@ -1,0 +1,40 @@
+@use "../styles/global";
+@use "../styles/mixins/background-image";
+@use "../styles/components/link-btn.scss";
+
+.header-container {
+  @include background-image.backgroundImage(
+    $url: "/images/landing.png",
+    $imgPositon: bottom,
+    $bgColor: global.$primary
+  );
+  padding: 50px 20px 0 30px;
+}
+
+.agency-name {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: global.$black;
+  font-weight: 600;
+  margin: 0;
+}
+
+.title {
+  padding: 0.5em 0 0 0;
+  margin: 0;
+}
+
+.link-container {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.logo {
+  margin-left: 0.5em;
+}
+
+.icon-arrow {
+  margin-left: 0.5em;
+}

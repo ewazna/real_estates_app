@@ -1,0 +1,28 @@
+@forward "../styles/fonts";
+@forward "../styles/colors";
+
+@use "../styles/fonts";
+@use "../styles/colors";
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: fonts.$raleway;
+  background-color: colors.$white;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: fonts.$raleway;
+  font-weight: 500;
+  color: colors.$white;
+}
+
+* {
+  box-sizing: border-box;
+}
