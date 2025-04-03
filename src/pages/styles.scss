@@ -1,40 +1,107 @@
 @use "../styles/global";
-@use "../styles/mixins/background-image";
 @use "../styles/components/link-btn.scss";
 
-.header-container {
-  @include background-image.backgroundImage(
-    $url: "/images/landing.png",
-    $imgPositon: bottom,
-    $bgColor: global.$primary
-  );
-  padding: 50px 20px 0 30px;
-}
-
-.agency-name {
+.container {
   display: flex;
-  justify-content: start;
-  align-items: center;
-  color: global.$black;
-  font-weight: 600;
-  margin: 0;
-}
-
-.title {
-  padding: 0.5em 0 0 0;
-  margin: 0;
-}
-
-.link-container {
-  display: flex;
-  justify-content: end;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
   width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: global.$primary;
+
+  .header-container {
+    margin: 0;
+    width: 100%;
+    font-family: global.$raleway;
+    padding: 10% 5% 0 5%;
+
+    .agency-name {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      color: global.$black;
+      font-weight: 600;
+      margin: 0;
+
+      .logo {
+        margin-left: 0.5em;
+      }
+    }
+
+    .title {
+      padding: 0.5em 0 0 0;
+      margin: 0;
+    }
+
+    .link-container {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      margin-top: 10px;
+
+      .link-btn {
+        margin: 0.5em 0;
+
+        .icon-arrow {
+          margin-left: 0.5em;
+        }
+      }
+    }
+  }
+  .img-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    .background-image {
+      display: block;
+      width: 100%;
+      object-fit: contain;
+      object-position: bottom;
+      align-self: flex-end;
+    }
+  }
 }
 
-.logo {
-  margin-left: 0.5em;
+@media (min-width: 640px) {
+  .img-container {
+    height: 70%;
+
+    .background-image {
+      height: 100%;
+      width: auto;
+      max-width: 100%;
+      margin-right: 5%;
+    }
+  }
 }
 
-.icon-arrow {
-  margin-left: 0.5em;
+@media (min-width: 768px) {
+  .link-container {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    justify-content: space-between;
+
+    .header-container {
+      height: 100%;
+      width: 50%;
+      padding: 20% 5% 0 10%;
+    }
+
+    .img-container {
+      height: 100%;
+      width: 50%;
+
+      .background-image {
+        height: 80%;
+        margin-right: 5%;
+      }
+    }
+  }
 }
