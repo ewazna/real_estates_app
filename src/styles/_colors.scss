@@ -1,8 +1,19 @@
+@use "sass:color";
+
 $primary: #7bb1eb;
+$primary-lighter: color.adjust(#7bb1eb, $lightness: 5%);
+$primary-lightest: color.adjust(#7bb1eb, $lightness: 15%);
 $secondary: #ff9429;
+$secondary-darker: color.adjust(#ff9429, $lightness: -5%);
+$secondary-darkest: color.adjust(#ff9429, $lightness: -15%);
 $green: #91c72e;
+$green-darker: color.adjust(#91c72e, $lightness: -5%);
+$green-darkest: color.adjust(#91c72e, $lightness: -15%);
 $white: white;
+$offwhite: rgb(252, 252, 252);
 $black: black;
+$black-lighter: color.mix(white, black, 20%);
+$black-lightest: color.mix(white, black, 50%);
 $grey: #f5f5f5;
 $grey-light: rgb(206, 206, 206);
 $grey-alpha: rgba(50, 0, 50, 0.25);

@@ -1,0 +1,116 @@
+@use "../../styles/colors";
+
+.navigation {
+  height: 56px;
+  width: 100%;
+  background-color: colors.$primary;
+
+  & > ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+#subnavigation {
+  position: absolute;
+  width: 120px;
+  background-color: colors.$primary;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 5px 5px 0 0;
+  padding: 0 0.5em;
+
+  .subnavigation-panel {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    & a {
+      margin: 10px 0;
+      color: colors.$white;
+      text-transform: none;
+      box-sizing: content-box;
+
+      &:focus-visible {
+        outline: none;
+        background-color: colors.$primary-lighter;
+      }
+
+      &:active {
+        background-color: colors.$primary-lightest;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .navigation {
+    position: absolute;
+    top: 0;
+    padding: 0 20%;
+    background-color: colors.$white;
+    filter: drop-shadow(0 8px 4px rgba(0, 0, 0, 0.15));
+
+    .link-btn-nav {
+      border-radius: 0%;
+      width: auto;
+      height: 2.2em;
+
+      &:hover {
+        background-color: transparent;
+        border-bottom: 2px solid colors.$primary;
+      }
+
+      &:focus-visible {
+        background-color: transparent;
+        border-bottom: 2px solid colors.$primary;
+      }
+
+      &:active {
+        background-color: transparent;
+        font-weight: 900;
+        border-bottom: 4px solid colors.$primary;
+      }
+
+      & > span {
+        text-transform: none;
+        color: colors.$primary;
+        margin-left: 0.5em;
+      }
+    }
+  }
+
+  #subnavigation {
+    background-color: colors.$white;
+    border-radius: 0 0 5px 5px;
+
+    .subnavigation-panel {
+      & a {
+        color: colors.$primary;
+
+        &:hover {
+          outline: none;
+          background-color: colors.$primary-lightest;
+          color: colors.$white;
+        }
+
+        &:focus-visible {
+          outline: none;
+          background-color: colors.$primary-lightest;
+          color: colors.$white;
+        }
+
+        &:active {
+          background-color: colors.$primary-lighter;
+        }
+      }
+    }
+  }
+}

@@ -7,7 +7,7 @@
   height: 100%;
   background-color: $bgColor;
   background-image: url($url);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: $imgPositon;
   font-family: fonts.$raleway;

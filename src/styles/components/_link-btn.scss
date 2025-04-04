@@ -15,6 +15,7 @@
   text-decoration: none;
   color: colors.$white;
   padding: 0.5em 1em 0.5em;
+  cursor: pointer;
 
   &-icon {
     padding: 0.5em;
@@ -22,21 +23,80 @@
 
   &-primary {
     background-color: colors.$primary;
+
+    &:hover {
+      background-color: colors.$primary-lighter;
+    }
+
+    &:focus-visible {
+      background-color: colors.$primary-lighter;
+      outline-offset: 4px;
+      outline: 3px solid colors.$primary-lighter;
+    }
+
+    &:active {
+      background-color: colors.$primary-lighter;
+      outline: 2px solid colors.$primary-lightest;
+    }
   }
 
   &-secondary {
     background-color: colors.$secondary;
+
+    &:hover {
+      background-color: colors.$secondary-darker;
+    }
+
+    &:focus-visible {
+      background-color: colors.$secondary-darker;
+      outline-offset: 4px;
+      outline: 3px solid colors.$secondary-darker;
+    }
+
+    &:active {
+      background-color: colors.$secondary-darker;
+      outline: 2px solid colors.$secondary-darkest;
+    }
   }
 
   &-green {
     background-color: colors.$green;
+
+    &:hover {
+      background-color: colors.$green-darker;
+    }
+
+    &:focus-visible {
+      background-color: colors.$green-darker;
+      outline-offset: 4px;
+      outline: 3px solid colors.$green-darker;
+    }
+
+    &:active {
+      background-color: colors.$green-darker;
+      outline: 2px solid colors.$green-darkest;
+    }
   }
 
   &-nav {
     background-color: transparent;
+    border-radius: 100%;
     width: 3rem;
     height: 3rem;
     margin: 0;
     padding: 0;
+
+    &:hover {
+      background-color: colors.$primary-lighter;
+    }
+
+    &:focus-visible {
+      background-color: colors.$primary-lighter;
+      outline: 2px solid colors.$white;
+    }
+
+    &:active {
+      background-color: colors.$primary-lightest;
+    }
   }
 }

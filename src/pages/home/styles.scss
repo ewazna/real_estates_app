@@ -1,0 +1,90 @@
+@use "../../styles/global";
+@use "../../styles/components/link-btn.scss";
+@use "../../styles/components/icon.scss";
+@use "../../styles/components/gallery.scss";
+@use "../../styles/components/navigation.scss";
+@use "../../styles/mixins/input";
+@use "../../styles/mixins/background-image";
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-container {
+  @include background-image.backgroundImage(
+    $url: "/images/home.png",
+    $imgPositon: top,
+    $bgColor: global.$white
+  );
+  position: relative;
+  flex: 1 1;
+
+  .title-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 36px;
+    align-content: center;
+
+    .title {
+      margin: 0;
+    }
+
+    .link-container {
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+
+      .link-btn {
+        margin: 1em 0.5em 1em 0;
+        min-width: 150px;
+      }
+
+      .icon-rent {
+        margin-right: 0.5em;
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  .search-container {
+    display: flex;
+    justify-items: stretch;
+    align-items: center;
+    margin-top: 8px;
+    max-width: 698px;
+
+    .input {
+      @include input.input(
+        $bgColor: global.$white-alpha,
+        $color: global.$grey-alpha
+      );
+      width: 100%;
+      margin-left: 8px;
+    }
+
+    .icon-search {
+      position: absolute;
+      left: 100px;
+      opacity: 20%;
+    }
+  }
+}
+
+.main-container {
+  background-color: global.$offwhite;
+  filter: drop-shadow(0 0 2mm rgba(0, 0, 0, 0.15));
+}
+
+.footer {
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .header-container {
+    position: relative;
+    top: 56px;
+    height: calc(100% - 56px);
+  }
+}

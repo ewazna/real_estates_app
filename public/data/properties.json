@@ -1,0 +1,1050 @@
+
+[
+    {
+        "id":"123JdkO",
+        "name":"Cosy single-family home with garden",
+        "address": "123 Baker Street, London, W1U 6TY",
+        "type":"buy",
+        "category": "Single-family Home",
+        "size": 120,
+        "price": 300000,
+        "bedrooms":4,
+        "amenities": {
+            "petsAllowed":true,
+            "thermostat":true,
+            "dishwasher":false,
+            "balcony":true,
+            "AC":true,
+            "energySaving":true,
+            "garage":true,
+            "babyBedroom":false,
+            "fireplace":true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description":"Nestled in a peaceful suburban neighborhood on the outskirts of London, this delightful four-bedroom detached family home offers the perfect blend of comfort, space, and tranquility.<br>The property features a spacious open-plan living area with large windows that allow plenty of natural light to flood the space. A modern fully-equipped kitchen with high-end appliances opens onto a cozy dining area, making it ideal for family gatherings. The house also boasts a separate lounge with a fireplace, creating a warm and inviting atmosphere.<br>Upstairs, the home comprises four generously sized bedrooms, including a master suite with an en-suite bathroom and a walk-in closet. The additional bedrooms share a stylish family bathroom with contemporary fittings.<br>One of the standout features of this home is the beautifully landscaped garden, offering a large lawn, a patio area for outdoor dining, and a variety of mature trees and flowerbeds. The garden provides an idyllic setting for relaxation and entertainment, perfect for families or those who enjoy spending time outdoors.<br>Additional benefits include a private driveway with ample parking space, a garage, and easy access to local schools, parks, and transport links to central London.<br>This charming home is ideal for families looking for a peaceful retreat while remaining well-connected to the city"
+    },
+    {
+        "id": "GXKCMNG",
+        "name": "Beautiful single-family home in Cardiff",
+        "address": "123 Main Street, Cardiff, M1 1AE",
+        "type": "rent",
+        "category": "Single-family Home",
+        "size": 120,
+        "price": 2803,
+        "bedrooms": 5,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/6035306/pexels-photo-6035306.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic single-family home located in Cardiff. This property boasts 120 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "CBOH0UU",
+        "name": "Beautiful townhouse in Sheffield",
+        "address": "123 Elm Street, Sheffield, EH1 1BB",
+        "type": "rent",
+        "category": "Townhouse",
+        "size": 100,
+        "price": 2679,
+        "bedrooms": 3,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/3571200/pexels-photo-3571200.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic townhouse located in Sheffield. This property boasts 100 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "3IKBA8D",
+        "name": "Beautiful retail space in Leicester",
+        "address": "123 Baker Street, Leicester, B4 7AA",
+        "type": "buy",
+        "category": "Retail Space",
+        "size": 150,
+        "price": 226668,
+        "bedrooms": 1,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+           "https://images.pexels.com/photos/2449455/pexels-photo-2449455.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+           "https://images.pexels.com/photos/3201921/pexels-photo-3201921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic retail space located in Leicester. This property boasts 150 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "Q2GJ309",
+        "name": "Beautiful single-family home in Cardiff",
+        "address": "123 Elm Street, Cardiff, LS1 1DT",
+        "type": "buy",
+        "category": "Single-family Home",
+        "size": 120,
+        "price": 357749,
+        "bedrooms": 4,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/221540/pexels-photo-221540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic single-family home located in Cardiff. This property boasts 120 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "LJL919E",
+        "name": "Beautiful single-family home in Sheffield",
+        "address": "123 Baker Street, Sheffield, EH1 1BB",
+        "type": "buy",
+        "category": "Single-family Home",
+        "size": 120,
+        "price": 250875,
+        "bedrooms": 4,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/4030037/pexels-photo-4030037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic single-family home located in Sheffield. This property boasts 120 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "YLC1TMC",
+        "name": "Beautiful condo in Manchester",
+        "address": "123 Elm Street, Manchester, B4 7AA",
+        "type": "buy",
+        "category": "Condo",
+        "size": 90,
+        "price": 273679,
+        "bedrooms": 1,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/10917486/pexels-photo-10917486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic condo located in Manchester. This property boasts 90 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "GV5EM19",
+        "name": "Beautiful villa in Leicester",
+        "address": "123 High Street, Leicester, M1 1AE",
+        "type": "rent",
+        "category": "Villa",
+        "size": 200,
+        "price": 1930,
+        "bedrooms": 5,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/208736/pexels-photo-208736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic villa located in Leicester. This property boasts 200 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "YMP2RWT",
+        "name": "Beautiful single-family home in Newcastle upon Tyne",
+        "address": "123 Elm Street, Newcastle upon Tyne, W1U 6TY",
+        "type": "rent",
+        "category": "Single-family Home",
+        "size": 120,
+        "price": 1973,
+        "bedrooms": 3,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/12700469/pexels-photo-12700469.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic single-family home located in Newcastle upon Tyne. This property boasts 120 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "10D60A5",
+        "name": "Beautiful townhouse in Glasgow",
+        "address": "123 High Street, Glasgow, EH1 1BB",
+        "type": "rent",
+        "category": "Townhouse",
+        "size": 100,
+        "price": 1892,
+        "bedrooms": 3,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/10035681/pexels-photo-10035681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic townhouse located in Glasgow. This property boasts 100 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "DV844VY",
+        "name": "Beautiful apartment in Manchester",
+        "address": "123 Elm Street, Manchester, B4 7AA",
+        "type": "rent",
+        "category": "Apartment",
+        "size": 80,
+        "price": 2905,
+        "bedrooms": 2,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/280212/pexels-photo-280212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic apartment located in Manchester. This property boasts 80 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "HJWNA79",
+        "name": "Beautiful villa in Manchester",
+        "address": "123 Elm Street, Manchester, EH1 1BB",
+        "type": "buy",
+        "category": "Villa",
+        "size": 200,
+        "price": 443975,
+        "bedrooms": 4,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic villa located in Manchester. This property boasts 200 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "71WW1GH",
+        "name": "Beautiful condo in Birmingham",
+        "address": "123 High Street, Birmingham, EH1 1BB",
+        "type": "rent",
+        "category": "Condo",
+        "size": 90,
+        "price": 2204,
+        "bedrooms": 5,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/29750423/pexels-photo-29750423/free-photo-of-modern-residential-building-in-voorburg-netherlands.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic condo located in Birmingham. This property boasts 90 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "0N34F41",
+        "name": "Beautiful single-family home in Leicester",
+        "address": "123 Elm Street, Leicester, M1 1AE",
+        "type": "buy",
+        "category": "Single-family Home",
+        "size": 120,
+        "price": 497231,
+        "bedrooms": 1,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/158730/new-home-construction-retro-design-158730.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic single-family home located in Leicester. This property boasts 120 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "266TVNJ",
+        "name": "Beautiful retail space in Birmingham",
+        "address": "123 Baker Street, Birmingham, EH1 1BB",
+        "type": "rent",
+        "category": "Retail Space",
+        "size": 150,
+        "price": 2557,
+        "bedrooms": 3,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/4716816/pexels-photo-4716816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic retail space located in Birmingham. This property boasts 150 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "D647GPA",
+        "name": "Beautiful townhouse in Sheffield",
+        "address": "123 Elm Street, Sheffield, B4 7AA",
+        "type": "buy",
+        "category": "Townhouse",
+        "size": 100,
+        "price": 324171,
+        "bedrooms": 1,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+           "https://images.pexels.com/photos/3977327/pexels-photo-3977327.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic townhouse located in Sheffield. This property boasts 100 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "LOIYG2I",
+        "name": "Beautiful retail space in Leeds",
+        "address": "123 Elm Street, Leeds, B4 7AA",
+        "type": "rent",
+        "category": "Retail Space",
+        "size": 150,
+        "price": 1928,
+        "bedrooms": 3,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/276681/pexels-photo-276681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic retail space located in Leeds. This property boasts 150 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "OSISJYY",
+        "name": "Beautiful mobile home in Manchester",
+        "address": "123 High Street, Manchester, M1 1AE",
+        "type": "rent",
+        "category": "Mobile Home",
+        "size": 50,
+        "price": 1754,
+        "bedrooms": 4,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+      "https://images.pexels.com/photos/16746357/pexels-photo-16746357/free-photo-of-interior-of-a-trailer.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic mobile home located in Manchester. This property boasts 50 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "KTYDCD3",
+        "name": "Beautiful apartment in Sheffield",
+        "address": "123 High Street, Sheffield, B4 7AA",
+        "type": "rent",
+        "category": "Apartment",
+        "size": 80,
+        "price": 2842,
+        "bedrooms": 3,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/565324/pexels-photo-565324.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic apartment located in Sheffield. This property boasts 80 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "4CHO6LM",
+        "name": "Beautiful apartment in Cardiff",
+        "address": "123 Elm Street, Cardiff, W1U 6TY",
+        "type": "buy",
+        "category": "Apartment",
+        "size": 80,
+        "price": 164193,
+        "bedrooms": 3,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/87223/pexels-photo-87223.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic apartment located in Cardiff. This property boasts 80 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "NKLUIAK",
+        "name": "Beautiful office building in Cardiff",
+        "address": "123 Park Street, Cardiff, M1 1AE",
+        "type": "buy",
+        "category": "Office building",
+        "size": 250,
+        "price": 230966,
+        "bedrooms": 4,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+                 "https://images.pexels.com/photos/6794967/pexels-photo-6794967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                 "https://images.pexels.com/photos/13464442/pexels-photo-13464442.jpeg"
+        ],
+        "description": "A fantastic office building located in Cardiff. This property boasts 250 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "95B45W3",
+        "name": "Beautiful condo in Birmingham",
+        "address": "123 Baker Street, Birmingham, B4 7AA",
+        "type": "buy",
+        "category": "Condo",
+        "size": 90,
+        "price": 203692,
+        "bedrooms": 3,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/27467317/pexels-photo-27467317/free-photo-of-a-large-apartment-building-with-balconies-and-windows.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic condo located in Birmingham. This property boasts 90 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "MNMZ6MN",
+        "name": "Beautiful condo in Nottingham",
+        "address": "123 Elm Street, Nottingham, W1U 6TY",
+        "type": "rent",
+        "category": "Condo",
+        "size": 90,
+        "price": 1400,
+        "bedrooms": 3,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/3639624/pexels-photo-3639624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic condo located in Nottingham. This property boasts 90 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "5TM2IM8",
+        "name": "Beautiful office building in Nottingham",
+        "address": "123 High Street, Nottingham, M1 1AE",
+        "type": "rent",
+        "category": "Office building",
+        "size": 250,
+        "price": 2660,
+        "bedrooms": 5,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/380768/pexels-photo-380768.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic office building located in Nottingham. This property boasts 250 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "QLFUAU5",
+        "name": "Beautiful warehouse in Liverpool",
+        "address": "123 Elm Street, Liverpool, EH1 1BB",
+        "type": "buy",
+        "category": "Warehouse",
+        "size": 500,
+        "price": 123712,
+        "bedrooms": 2,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+      "https://images.pexels.com/photos/221047/pexels-photo-221047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic warehouse located in Liverpool. This property boasts 500 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "LY09XOR",
+        "name": "Beautiful apartment in Leeds",
+        "address": "123 Main Street, Leeds, B4 7AA",
+        "type": "buy",
+        "category": "Apartment",
+        "size": 80,
+        "price": 461473,
+        "bedrooms": 2,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/209292/pexels-photo-209292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic apartment located in Leeds. This property boasts 80 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "JR3MZZT",
+        "name": "Beautiful office building in Leeds",
+        "address": "123 Baker Street, Leeds, B4 7AA",
+        "type": "rent",
+        "category": "Office building",
+        "size": 250,
+        "price": 2287,
+        "bedrooms": 2,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+  "https://images.pexels.com/photos/221537/pexels-photo-221537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic office building located in Leeds. This property boasts 250 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "N4ERK47",
+        "name": "Beautiful villa in London",
+        "address": "123 Park Street, London, W1U 6TY",
+        "type": "buy",
+        "category": "Villa",
+        "size": 200,
+        "price": 101800,
+        "bedrooms": 3,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/16667312/pexels-photo-16667312/free-photo-of-wall-of-mansion-in-london.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic villa located in London. This property boasts 200 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "YOXBHN1",
+        "name": "Beautiful single-family home in Edinburgh",
+        "address": "123 Elm Street, Edinburgh, EH1 1BB",
+        "type": "buy",
+        "category": "Single-family Home",
+        "size": 120,
+        "price": 471807,
+        "bedrooms": 4,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/5071174/pexels-photo-5071174.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic single-family home located in Edinburgh. This property boasts 120 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "OWAV5KW",
+        "name": "Beautiful single-family home in Bradford",
+        "address": "123 Park Street, Bradford, W1U 6TY",
+        "type": "rent",
+        "category": "Single-family Home",
+        "size": 120,
+        "price": 2137,
+        "bedrooms": 4,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+           "https://images.pexels.com/photos/8288954/pexels-photo-8288954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic single-family home located in Bradford. This property boasts 120 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "3R50B8U",
+        "name": "Beautiful townhouse in Bristol",
+        "address": "123 High Street, Bristol, W1U 6TY",
+        "type": "buy",
+        "category": "Townhouse",
+        "size": 100,
+        "price": 416693,
+        "bedrooms": 3,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+"https://images.pexels.com/photos/6760950/pexels-photo-6760950.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic townhouse located in Bristol. This property boasts 100 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "Q5ZZBGO",
+        "name": "Beautiful villa in Leicester",
+        "address": "123 Elm Street, Leicester, M1 1AE",
+        "type": "buy",
+        "category": "Villa",
+        "size": 200,
+        "price": 171020,
+        "bedrooms": 5,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/6422939/pexels-photo-6422939.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic villa located in Leicester. This property boasts 200 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "5G3BUOI",
+        "name": "Beautiful mobile home in Glasgow",
+        "address": "123 High Street, Glasgow, LS1 1DT",
+        "type": "rent",
+        "category": "Mobile Home",
+        "size": 50,
+        "price": 2081,
+        "bedrooms": 2,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/31360764/pexels-photo-31360764/free-photo-of-relaxing-in-a-sunny-vintage-caravan-park.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","https://images.pexels.com/photos/17444987/pexels-photo-17444987/free-photo-of-a-camper-van-with-a-view-of-the-ocean-and-mountains.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"],
+        "description": "A fantastic mobile home located in Glasgow. This property boasts 50 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "0L6X2OA",
+        "name": "Beautiful condo in Nottingham",
+        "address": "123 Baker Street, Nottingham, M1 1AE",
+        "type": "buy",
+        "category": "Condo",
+        "size": 90,
+        "price": 316919,
+        "bedrooms": 5,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/12993967/pexels-photo-12993967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic condo located in Nottingham. This property boasts 90 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "198FGN1",
+        "name": "Beautiful condo in Bristol",
+        "address": "123 Park Street, Bristol, EH1 1BB",
+        "type": "buy",
+        "category": "Condo",
+        "size": 90,
+        "price": 427075,
+        "bedrooms": 2,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/12029111/pexels-photo-12029111.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic condo located in Bristol. This property boasts 90 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "1PPRYRH",
+        "name": "Beautiful single-family home in Newcastle upon Tyne",
+        "address": "123 High Street, Newcastle upon Tyne, M1 1AE",
+        "type": "buy",
+        "category": "Single-family Home",
+        "size": 120,
+        "price": 435859,
+        "bedrooms": 1,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic single-family home located in Newcastle upon Tyne. This property boasts 120 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    },
+    {
+        "id": "BKW2EW1",
+        "name": "Beautiful townhouse in Cardiff",
+        "address": "123 Park Street, Cardiff, EH1 1BB",
+        "type": "rent",
+        "category": "Townhouse",
+        "size": 100,
+        "price": 1565,
+        "bedrooms": 5,
+        "amenities": {
+            "petsAllowed": true,
+            "thermostat": true,
+            "dishwasher": false,
+            "balcony": true,
+            "AC": true,
+            "energySaving": true,
+            "garage": true,
+            "babyBedroom": false,
+            "fireplace": true
+        },
+        "photos": [
+            "https://images.pexels.com/photos/7460486/pexels-photo-7460486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288103/pexels-photo-3288103.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288102/pexels-photo-3288102.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288100/pexels-photo-3288100.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        ],
+        "description": "A fantastic townhouse located in Cardiff. This property boasts 100 square meters of space and is perfect for those looking for a comfortable and spacious living environment. Whether you're looking to buy or rent, this is a great opportunity."
+    }
+]

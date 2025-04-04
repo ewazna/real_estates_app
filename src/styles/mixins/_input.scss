@@ -1,0 +1,35 @@
+@use "../fonts";
+@use "../colors";
+
+@mixin input($bgColor, $color) {
+  height: 3rem;
+  padding: 0 0 0 2.2em;
+  border: none;
+  border-radius: 5px;
+  font-family: fonts.$roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  flex-grow: 1;
+  background-color: $bgColor;
+  color: $color;
+
+  &:hover {
+    outline-offset: -4px;
+    outline: 2px solid $color;
+  }
+
+  &:focus-visible {
+    outline-offset: -4px;
+    outline: 2px solid colors.$primary;
+  }
+
+  &:active {
+    outline-offset: -4px;
+    outline: 2px solid colors.$primary;
+  }
+
+  &::placeholder {
+    color: $color;
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.scss" />
+    <title>BlueSky Estates | Home</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="title-container">
+        <h1 class="title">Find your<br />dream home</h1>
+        <div class="search-container">
+          <a class="link-btn link-btn-icon link-btn-secondary" href="/map/">
+            <img class="icon-32" src="/icons/map.svg" />
+          </a>
+          <input type="text" placeholder="Search" class="input" />
+          <img class="icon-32 icon-search" src="/icons/search.svg" />
+        </div>
+        <div class="link-container"></div>
+      </div>
+    </header>
+    <main class="main-container">
+      <div class="list-container">
+        <div class="gallery-container"></div>
+        <div class="buttons-container">
+          <button class="link-btn link-btn-icon gallery-arrow">
+            <img class="icon-40" src="/icons/arrow_back.svg" />
+          </button>
+          <button class="link-btn link-btn-icon gallery-arrow">
+            <img class="icon-40" src="/icons/arrow_forward.svg" />
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <nav class="navigation">
+        <ul>
+          <li>
+            <a class="link-btn link-btn-nav" href="/home/">
+              <img class="icon-30" src="/icons/home.svg" />
+            </a>
+          </li>
+          <li>
+            <a class="link-btn link-btn-nav" href="/contact/">
+              <img class="icon-32" src="/icons/contact.svg" />
+            </a>
+          </li>
+          <li>
+            <a class="link-btn link-btn-nav" href="/map/">
+              <img class="icon-30" src="/icons/map.svg" />
+            </a>
+          </li>
+          <li>
+            <button class="link-btn link-btn-nav" id="subnavigation-trigger">
+              <img class="icon-30" src="/icons/properties.svg" />
+            </button>
+            <div popover="manual" id="subnavigation">
+              <ul class="subnavigation-panel">
+                <li>
+                  <a class="link-btn" href="/realestates/">For rent </a>
+                </li>
+                <li>
+                  <a class="link-btn" href="/realestates/"> For sell </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script type="module" src="./index.ts"></script>
+  </body>
+</html>
