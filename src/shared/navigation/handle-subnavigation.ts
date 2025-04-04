@@ -51,14 +51,6 @@ function setSubnavigationState(
   ) as HTMLElement;
   const panel = document.querySelector("#subnavigation") as HTMLElement;
 
-  const {
-    top: triggerTop,
-    left: triggerLeft,
-    width: triggerWidth,
-  } = trigger.getBoundingClientRect();
-  const { width: panelWidth, height: panelHeight } =
-    panel.getBoundingClientRect();
-
   switch (action) {
     case "show":
       panel.showPopover();
@@ -71,6 +63,14 @@ function setSubnavigationState(
       panel.togglePopover();
   }
 
+  const {
+    top: triggerTop,
+    left: triggerLeft,
+    width: triggerWidth,
+  } = trigger.getBoundingClientRect();
+  const { width: panelWidth, height: panelHeight } =
+    panel.getBoundingClientRect();
+
   if (trigger && panel) {
     if (direction === "down") {
       const topOffset = 36;
@@ -79,7 +79,7 @@ function setSubnavigationState(
     } else if (direction === "up") {
       const navHeight = 56;
       panel.style.top = window.innerHeight - panelHeight - navHeight + "px";
-      panel.style.left = triggerLeft + (triggerWidth - panelWidth) / 2 + "px";
+      panel.style.left = triggerLeft + triggerWidth / 2 - panelWidth / 2 + "px";
     }
   }
 }
