@@ -1,0 +1,20 @@
+@use "../colors";
+
+@mixin link-btn-back-states() {
+  &:hover {
+    background-color: colors.$white-transparent;
+    outline: 2px solid colors.$white-transparent;
+    border-radius: 100%;
+  }
+  &:focus-visible {
+    outline-offset: 0;
+    outline: 3px solid colors.$white;
+    border-radius: 100%;
+  }
+
+  &:active {
+    background-color: colors.$white-less-transparent;
+    outline: 2px solid colors.$white-less-transparent;
+    border-radius: 100%;
+  }
+}

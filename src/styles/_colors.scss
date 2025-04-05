@@ -10,6 +10,8 @@ $green: #91c72e;
 $green-darker: color.adjust(#91c72e, $lightness: -5%);
 $green-darkest: color.adjust(#91c72e, $lightness: -15%);
 $white: white;
+$white-transparent: rgba(255, 255, 255, 0.2);
+$white-less-transparent: rgba(255, 255, 255, 0.5);
 $offwhite: rgb(252, 252, 252);
 $black: black;
 $black-lighter: color.mix(white, black, 20%);

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.scss" />
+    <title>BlueSky Estates | Contact</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="title-container">
+        <a class="link-btn link-btn-back"
+          ><img src="/icons/arrow_back.svg" class="icon-42 icon-back"
+        /></a>
+        <h1 class="title">Contact</h1>
+      </div>
+    </header>
+    <main class="main-container">
+      <div class="map-container">
+        <iframe
+          class="map"
+          frameborder="0"
+          scrolling="no"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-0.187066%2C51.47776%2C-0.183066%2C51.47976&amp;layer=mapnik&amp;marker=51.47876%2C-0.185066"
+        ></iframe>
+      </div>
+      <div class="contact-container">
+        <div class="adress-container">
+          <h2 class="agency-name">
+            BlueSky Estates <img class="logo" src="/icons/logo.svg" />
+          </h2>
+          <p>79 Lots Road, London,<br />SW10 0RN, United Kingdom</p>
+        </div>
+        <hr />
+        <div class="agents-container">
+          <p>Alex</p>
+          <p class="phone">
+            <img class="icon-18 icon-phone" src="/icons/phone.svg" />+44 567 283
+            222
+          </p>
+          <p>Stephen</p>
+          <p class="phone">
+            <img class="icon-18 icon-phone" src="/icons/phone.svg" />+44 555 283
+            244
+          </p>
+        </div>
+      </div>
+    </main>
+    <div class="background-image"></div>
+    <footer class="footer">
+      <nav class="navigation">
+        <ul>
+          <li>
+            <a class="link-btn link-btn-nav" href="/home/">
+              <img class="icon-30" src="/icons/home.svg" />
+            </a>
+          </li>
+          <li>
+            <a class="link-btn link-btn-nav" href="/contact/">
+              <img class="icon-32" src="/icons/contact.svg" />
+            </a>
+          </li>
+          <li>
+            <a class="link-btn link-btn-nav" href="/map/">
+              <img class="icon-30" src="/icons/map.svg" />
+            </a>
+          </li>
+          <li>
+            <button class="link-btn link-btn-nav" id="subnavigation-trigger">
+              <img class="icon-30" src="/icons/properties.svg" />
+            </button>
+            <div popover="manual" id="subnavigation">
+              <ul class="subnavigation-panel">
+                <li>
+                  <a class="link-btn" href="/realestates/">For rent </a>
+                </li>
+                <li>
+                  <a class="link-btn" href="/realestates/"> For sell </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script type="module" src="./index.ts"></script>
+  </body>
+</html>
