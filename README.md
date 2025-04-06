@@ -1,6 +1,52 @@
 # **Real Estates App**
 
-**Real Estates App** is a user-friendly application that helps you find your dream home. With powerful filtering, sorting, and search capabilities, you can easily discover properties that match your preferences.
+**BlueSky Estates** is a user-friendly application that helps you find your dream home. With powerful filtering, sorting, and search capabilities, you can easily discover properties that match your preferences.
+
+## **Project Setup**
+
+### To run the project locally:
+
+1. Install dependencies
+
+```
+npm install
+```
+
+2. Run Vite server
+
+```
+npm run dev
+```
+
+3. Navigate in your browser to `http://localhost:5173/`
+
+### To build project:
+
+To build whole project together with Typescript compilation Sass compilation, and js files bundling run npm script:
+
+```
+npm run build
+```
+
+To compile only Sass files to css you can run:
+
+```
+npm run compile
+```
+
+### To check project files:
+
+For eslint lintering run:
+
+```
+npm run lint
+```
+
+For prettier style checking run:
+
+```
+npm run prettier
+```
 
 ## **Main features of App**
 
@@ -11,21 +57,13 @@
 
 ## **Technologies Used**
 
-This is a Single Page Application (SPA) built with the following technologies:
+This is a Multi Page Application (MPA) built with the following technologies:
 
 - Vite
 - TypeScript
-- SASS
+- Sass
 
 Additional packeges:
 
 - Prettier – for code formatting
 - ESLint – for code linting
-
-## **Project Setup**
-
-To run the project locally:
-git clone https://github.com/your-username/real-estates-app.git
-cd real-estates-app
-npm install
-npm run dev
