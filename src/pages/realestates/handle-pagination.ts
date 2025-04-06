@@ -63,10 +63,10 @@ export function buildPages(properties: Property[], initialPage: number) {
   }
 
   function updateButtonVisibility(currentPage: number) {
-    firstPageBtn.disabled = currentPage === 1;
-    previousPageBtn.disabled = currentPage === 1;
-    nextPageBtn.disabled = currentPage === lastPage;
-    lastPageBtn.disabled = currentPage === lastPage;
+    firstPageBtn.disabled = numberOfProperties === 0 || currentPage === 1;
+    previousPageBtn.disabled = numberOfProperties === 0 || currentPage === 1;
+    nextPageBtn.disabled = numberOfProperties === 0 || currentPage === lastPage;
+    lastPageBtn.disabled = numberOfProperties === 0 || currentPage === lastPage;
   }
 
   updateView();
