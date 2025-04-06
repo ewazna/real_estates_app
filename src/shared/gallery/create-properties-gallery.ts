@@ -1,5 +1,6 @@
 import { Property } from "../../models";
 import { fetchProperties } from "../fetch-data";
+import { debounce } from "../utils/debounce";
 import { calculateNumberOfVisibleCards } from "./calculate-number-of-cards";
 import { updatePropertiesGalleryView } from "./update-properties-gallery-view";
 
@@ -9,9 +10,23 @@ export const IMAGE_GAP = 16;
 export async function createPropertiesGallery(): Promise<void> {
   const properties: Property[] = await fetchProperties();
   const totalProperties = properties.length;
-  const numberOfVisibleProperties = calculateNumberOfVisibleCards(
+  let numberOfVisibleProperties = calculateNumberOfVisibleCards(
     IMAGE_WIDTH,
     IMAGE_GAP,
+  );
+
+  window.addEventListener(
+    "resize",
+    debounce(() => {
+      const newNumberOfVisibleProperties = calculateNumberOfVisibleCards(
+        IMAGE_WIDTH,
+        IMAGE_GAP,
+      );
+      if (newNumberOfVisibleProperties !== numberOfVisibleProperties) {
+        numberOfVisibleProperties = newNumberOfVisibleProperties;
+        updateGallery();
+      }
+    }),
   );
 
   let firstVisibleIndex = 0;

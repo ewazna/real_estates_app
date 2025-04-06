@@ -5,7 +5,7 @@ export function createFigure(property: Property): HTMLElement {
   figure.id = "property_" + property.id;
   figure.classList.add("property-container");
   figure.addEventListener("click", () => {
-    window.location.href = `/realestates/${property.id}/`;
+    window.location.href = `/realestates/${property.id}`;
   });
 
   const image = document.createElement("img");
@@ -15,11 +15,11 @@ export function createFigure(property: Property): HTMLElement {
   const info = document.createElement("figcaption");
   info.classList.add("property-info");
 
-  const title: HTMLParagraphElement = document.createElement("p");
+  const title: HTMLSpanElement = document.createElement("span");
   title.textContent = property.name;
 
-  const address: HTMLParagraphElement = document.createElement("p");
-  address.textContent = property.address;
+  const address: HTMLSpanElement = document.createElement("span");
+  address.textContent = property.location;
 
   const price: HTMLSpanElement = document.createElement("span");
   price.classList.add("price-tag");
@@ -37,23 +37,18 @@ export function createFigure(property: Property): HTMLElement {
   bedrooms.textContent = `${property.bedrooms}`;
 
   const sizeIcon = document.createElement("img");
-  sizeIcon.classList.add("icon-30", "tag-icon");
+  sizeIcon.classList.add("icon-24", "tag-icon");
   sizeIcon.setAttribute("src", "/icons/size.svg");
 
   const bedIcon = document.createElement("img");
-  bedIcon.classList.add("icon-30", "tag-icon");
+  bedIcon.classList.add("icon-24", "tag-icon");
   bedIcon.setAttribute("src", "/icons/bed.svg");
 
   size.prepend(sizeIcon);
   bedrooms.prepend(bedIcon);
-  tags.append(size);
-  tags.append(bedrooms);
-  info.append(title);
-  info.append(address);
-  figure.append(image);
-  figure.append(info);
-  figure.append(price);
-  figure.append(tags);
+  tags.append(bedrooms, size);
+  info.append(title, price, address, tags);
+  figure.append(image, info);
 
   return figure;
 }

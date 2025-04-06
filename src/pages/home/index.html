@@ -17,10 +17,12 @@
       <div class="title-container">
         <h1 class="title">Find your<br />dream home</h1>
         <div class="search-container">
-          <a class="link-btn link-btn-icon link-btn-secondary" href="/map/">
-            <img class="icon-32" src="/icons/map.svg" />
-          </a>
-          <input type="text" placeholder="Search" class="input" />
+          <input
+            id="home-search"
+            type="text"
+            placeholder="Search"
+            class="input"
+          />
           <img class="icon-32 icon-search" src="/icons/search.svg" />
         </div>
         <div class="link-container"></div>
@@ -53,21 +55,20 @@
             </a>
           </li>
           <li>
-            <a class="link-btn link-btn-nav" href="/map/">
-              <img class="icon-30" src="/icons/map.svg" />
-            </a>
-          </li>
-          <li>
             <button class="link-btn link-btn-nav" id="subnavigation-trigger">
               <img class="icon-30" src="/icons/properties.svg" />
             </button>
             <div popover="manual" id="subnavigation">
               <ul class="subnavigation-panel">
                 <li>
-                  <a class="link-btn" href="/realestates/">For rent </a>
+                  <a class="link-btn" href="/realestates/?usage=rent"
+                    >For rent
+                  </a>
                 </li>
                 <li>
-                  <a class="link-btn" href="/realestates/"> For sell </a>
+                  <a class="link-btn" href="/realestates/?usage=buy">
+                    For sell
+                  </a>
                 </li>
               </ul>
             </div>

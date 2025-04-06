@@ -20,10 +20,7 @@ export function updatePropertiesGalleryView(properties: Property[]): void {
     (figure) => !propertyIds.includes(figure.id.split("_")[1]),
   );
 
-  if (newProperties.length > 1) {
-    const figures = properties.map((property) => createFigure(property));
-    list.replaceChildren(...figures);
-  } else {
+  if (newProperties.length === 1 && toRemoveFigures.length === 1) {
     const newProperty = newProperties[0];
     const newPropertyIdx = properties.indexOf(newProperty);
     const figureToAdd = createFigure(newProperty);
@@ -58,5 +55,8 @@ export function updatePropertiesGalleryView(properties: Property[]): void {
     } else {
       moveGallery(1);
     }
+  } else {
+    const figures = properties.map((property) => createFigure(property));
+    list.replaceChildren(...figures);
   }
 }

@@ -1,35 +1,54 @@
-import { isWideScreen } from "../../shared/utils/is-wide-screen";
-
 export function createShortcutButtons(): void {
-  const buttonsContainer = document.querySelector(".link-container");
+  const buttonsContainer = document.querySelector(
+    ".link-container",
+  ) as HTMLDivElement;
 
-  if (isWideScreen()) {
-    const rentButton = document.createElement("a");
-    rentButton.classList.add("link-btn", "link-btn-green");
-    rentButton.setAttribute("href", "/realestates/");
+  const wideScreenBreakpoint = window.matchMedia("(min-width: 768px)");
 
-    const rentIcon = document.createElement("img");
-    rentIcon.setAttribute("src", "/icons/rent.svg");
-    rentIcon.classList.add("icon-32", "icon-rent");
+  const toggleButtons = (matches: boolean) => {
+    if (matches) {
+      const rentButton = document.createElement("a");
+      rentButton.classList.add("link-btn", "link-btn-green");
+      rentButton.setAttribute("href", "/realestates/?usage=rent");
 
-    const rentText = document.createElement("span");
-    rentText.innerText = " For rent";
+      const rentIcon = document.createElement("img");
+      rentIcon.setAttribute("src", "/icons/rent.svg");
+      rentIcon.classList.add("icon-32", "icon-rent");
 
-    rentButton.append(rentIcon, rentText);
+      const rentText = document.createElement("span");
+      rentText.innerText = " For rent";
 
-    const buyButton = document.createElement("a");
-    buyButton.classList.add("link-btn", "link-btn-secondary");
-    buyButton.setAttribute("href", "/realestates/");
+      rentButton.append(rentIcon, rentText);
 
-    const buyIcon = document.createElement("img");
-    buyIcon.setAttribute("src", "/icons/buy.svg");
-    buyIcon.classList.add("icon-32");
+      const buyButton = document.createElement("a");
+      buyButton.classList.add("link-btn", "link-btn-secondary");
+      buyButton.setAttribute("href", "/realestates/?usage=buy");
 
-    const buyText = document.createElement("span");
-    buyText.innerText = " For buy";
+      const buyIcon = document.createElement("img");
+      buyIcon.setAttribute("src", "/icons/buy.svg");
+      buyIcon.classList.add("icon-32");
 
-    buyButton.append(buyIcon, buyText);
+      const buyText = document.createElement("span");
+      buyText.innerText = " For buy";
 
-    buttonsContainer?.append(rentButton, buyButton);
-  }
+      buyButton.append(buyIcon, buyText);
+
+      buttonsContainer?.append(rentButton, buyButton);
+    } else {
+      const rentButton =
+        buttonsContainer.firstElementChild as HTMLAnchorElement;
+      const buyButton = buttonsContainer.lastElementChild as HTMLAnchorElement;
+      if (!rentButton && !buyButton) {
+        return;
+      }
+      rentButton.remove();
+      buyButton.remove();
+    }
+  };
+
+  toggleButtons(wideScreenBreakpoint.matches);
+
+  wideScreenBreakpoint.onchange = (e) => {
+    toggleButtons(e.matches);
+  };
 }
