@@ -279,9 +279,10 @@ function createSizeFilter(): void {
 function installSectionsToggling(): void {
   document.querySelectorAll("section.section").forEach((section) => {
     const content = section.querySelector(".section-content") as HTMLElement;
+    const header = section.querySelector(".section-header") as HTMLElement;
     const toggle = section.querySelector(".section-toggle") as HTMLElement;
 
-    toggle.addEventListener("click", () => {
+    header.addEventListener("click", () => {
       toggle.classList.toggle("open");
       content.classList.toggle("open");
     });

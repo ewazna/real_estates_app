@@ -14,9 +14,9 @@ export function generatePropertyDetails(property: Property) {
   title.textContent = property.name;
 
   const address = document.querySelector(".address") as HTMLParagraphElement;
-  const splitIndex = property.address.indexOf(",");
+  const splitIndex = property.address.indexOf(", ");
   const firstLineAddress = property.address.slice(0, splitIndex);
-  const secondLineAddress = property.address.slice(-splitIndex);
+  const secondLineAddress = property.address.slice(splitIndex + 1);
   address.innerHTML = `${firstLineAddress}<br/> ${secondLineAddress}`;
 
   const map = document.querySelector(".map") as HTMLIFrameElement;

@@ -15,7 +15,7 @@ export function createSubsection(
   const subsectionToggle = document.createElement("button");
   subsectionToggle.type = "button";
   subsectionToggle.classList.add("btn", "btn-icon", "subsection-toggle");
-  subsectionToggle.addEventListener("click", () => {
+  subsectionHeader.addEventListener("click", () => {
     subsectionToggle.classList.toggle("open");
     subsectionContent.classList.toggle("open");
   });
