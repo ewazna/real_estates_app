@@ -1,0 +1,277 @@
+@use "../../../styles/global";
+@use "../../../styles/components/link-btn.scss";
+@use "../../../styles/components/icon.scss";
+@use "../../../styles/components/navigation.scss";
+@use "../../../styles/mixins/input";
+@use "../../../styles/mixins/link-btn-back-states";
+
+.header-container {
+  position: relative;
+
+  .image-slider {
+    width: 100%;
+    height: 300px;
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.5));
+  }
+
+  .property-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 0 5px 5px;
+  }
+
+  .buttons-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .slider-arrow {
+      margin: 0;
+      background-color: global.$white-alpha;
+
+      &:hover {
+        background-color: global.$white;
+      }
+
+      &:active {
+        background-color: global.$white;
+      }
+
+      &:focus-visible {
+        background-color: global.$white;
+        outline-offset: 2px;
+        outline: 4px solid global.$white;
+      }
+
+      &:first-of-type {
+        padding: 2px 2px 2px 5px;
+        border-radius: 0 5px 5px 0;
+      }
+      &:last-of-type {
+        padding: 2px 5px 2px 2px;
+        border-radius: 5px 0 0 5px;
+      }
+    }
+  }
+
+  .price-tag {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-family: global.$raleway;
+    font-size: 2em;
+    font-weight: 800;
+    color: global.$white;
+  }
+
+  .price {
+    margin: 8px 8px 0 0;
+  }
+
+  .link-btn-back {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    margin: 0;
+    padding: 0;
+
+    @include link-btn-back-states.link-btn-back-states();
+
+    .icon-back {
+      filter: invert(100%) brightness(200%);
+    }
+  }
+}
+
+.main-container {
+  padding: 28px 20px 70px;
+
+  .property-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: global.$black;
+    margin: 0 0 5px 0;
+  }
+
+  .address {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 16px 0;
+  }
+
+  .tags-container {
+    display: flex;
+    width: 100%;
+    margin: 15px 0 5px 0;
+
+    .tag {
+      display: flex;
+      align-items: center;
+      margin: 4px 16px 4px 0;
+      font-weight: 500;
+      font-size: 1.3rem;
+      color: global.$black;
+    }
+  }
+
+  .description {
+    text-align: justify;
+  }
+
+  .amenities-container {
+    margin-bottom: 24px;
+
+    .amenity {
+      display: flex;
+      align-items: center;
+      height: 30px;
+      width: 100%;
+      margin: 16px 0;
+    }
+  }
+
+  .details-footer {
+    margin: 0;
+  }
+
+  .agents-container {
+    display: flex;
+    margin: 0;
+
+    & > p {
+      margin-right: 16px;
+      font-weight: 500;
+    }
+
+    .phone {
+      display: flex;
+      align-items: center;
+    }
+
+    .icon-phone {
+      margin-right: 0.5em;
+    }
+  }
+}
+
+.map-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+
+  .map {
+    width: 100%;
+    max-width: 250px;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+.tag-icon {
+  margin-right: 8px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+@media (min-width: 640px) {
+  .header-container {
+    .image-slider {
+      height: 350px;
+    }
+  }
+
+  .info-container {
+    display: flex;
+    justify-content: stretch;
+  }
+
+  .title-container {
+    width: 50%;
+  }
+
+  .map-container {
+    width: 50%;
+
+    .map {
+      max-width: unset;
+      max-height: 200px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .header-container {
+    padding-top: 56px;
+
+    .price {
+      margin: 64px 8px 0 0;
+    }
+
+    .link-btn-back {
+      top: 66px;
+    }
+
+    .image-slider {
+      height: 400px;
+    }
+  }
+
+  .main-container {
+    padding: 40px 5%;
+
+    .property-title {
+      font-size: 2.5rem;
+    }
+
+    .address {
+      font-size: 1.5rem;
+    }
+  }
+  .footer {
+    top: 0;
+    bottom: unset;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: global.$grey;
+  }
+
+  .header-container {
+    background-color: global.$white;
+    width: 1024px;
+    padding-top: 56px;
+
+    .property-image {
+      border-radius: 0;
+    }
+
+    .image-slider {
+      height: 500px;
+    }
+  }
+
+  .main-container {
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.15));
+    background-color: global.$white;
+    width: 1024px;
+  }
+
+  .footer {
+    background-color: global.$white;
+    width: 100%;
+  }
+}

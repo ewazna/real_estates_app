@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/realestates/details/styles.scss" />
+    <title>BlueSky Estates | Property</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="image-slider">
+        <img class="property-image" />
+        <div class="buttons-container">
+          <button class="link-btn link-btn-icon slider-arrow">
+            <img src="/icons/arrow_back.svg" />
+          </button>
+          <button class="link-btn link-btn-icon slider-arrow">
+            <img src="/icons/arrow_forward.svg" />
+          </button>
+        </div>
+      </div>
+      <span class="price-tag price"></span>
+      <a class="link-btn link-btn-back"
+        ><img src="/icons/arrow_back.svg" class="icon-42 icon-back"
+      /></a>
+    </header>
+    <main class="main-container">
+      <div class="info-container">
+        <div class="title-container">
+          <h1 class="property-title"></h1>
+          <p class="address"></p>
+        </div>
+        <div class="map-container">
+          <iframe class="map" frameborder="0" scrolling="no"></iframe>
+        </div>
+      </div>
+      <div class="tags-container">
+        <div class="tag">
+          <img class="icon-30 tag-icon" src="/icons/bed_secondary.svg" />
+          <span></span>
+        </div>
+        <div class="tag">
+          <img class="icon-30 tag-icon" src="/icons/shower_secondary.svg" />
+          <span></span>
+        </div>
+        <div class="tag">
+          <img class="icon-30 tag-icon" src="/icons/size_secondary.svg" />
+          <span></span>
+        </div>
+      </div>
+      <p class="description"></p>
+      <hr />
+      <div class="amenities-container">
+        <h2>Amenities:</h2>
+      </div>
+      <hr />
+      <p class="details-footer">
+        If you are interested about this real estate, please contact to our
+        agent:
+      </p>
+      <div class="agents-container">
+        <p class="agent-name"></p>
+        <p class="phone">
+          <img class="icon-18 icon-phone" src="/icons/phone.svg" />
+        </p>
+      </div>
+    </main>
+    <footer class="footer">
+      <nav class="navigation">
+        <ul>
+          <li>
+            <a class="link-btn link-btn-nav" href="/home/">
+              <img class="icon-30" src="/icons/home.svg" />
+            </a>
+          </li>
+          <li>
+            <a class="link-btn link-btn-nav" href="/contact/">
+              <img class="icon-32" src="/icons/contact.svg" />
+            </a>
+          </li>
+          <li>
+            <button class="link-btn link-btn-nav" id="subnavigation-trigger">
+              <img class="icon-30" src="/icons/properties.svg" />
+            </button>
+            <div popover="manual" id="subnavigation">
+              <ul class="subnavigation-panel">
+                <li>
+                  <a class="link-btn" href="/realestates/?usage=rent"
+                    >For rent
+                  </a>
+                </li>
+                <li>
+                  <a class="link-btn" href="/realestates/?usage=buy">
+                    For sell
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script type="module" src="/realestates/details/index.ts"></script>
+  </body>
+</html>
