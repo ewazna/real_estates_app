@@ -308,8 +308,10 @@ function setPriceRangeAccordingToUsage(): void {
   if (usage === UsagePurpose.BUY) {
     rangeTo.textContent = `$${MAX_PRICE_FOR_BUY}`;
     slider.max = MAX_PRICE_FOR_BUY.toString();
+    slider.value = MAX_PRICE_FOR_BUY.toString();
   } else {
     rangeTo.textContent = `$${MAX_PRICE_FOR_RENT}`;
     slider.max = MAX_PRICE_FOR_RENT.toString();
+    slider.value = MAX_PRICE_FOR_RENT.toString();
   }
 }
