@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.scss" />
+    <title>BlueSky Estates | Properties</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="title-container">
+        <a class="link-btn link-btn-back"
+          ><img src="/icons/arrow_back.svg" class="icon-42 icon-back"
+        /></a>
+        <h1 class="title">Properties</h1>
+      </div>
+      <div class="search-container">
+        <input
+          id="search-input"
+          type="text"
+          class="input"
+          placeholder="Search"
+        />
+        <img class="icon-search icon-32" src="/icons/search.svg" />
+        <button
+          id="open-filters"
+          class="link-btn link-btn-icon link-btn-secondary"
+        >
+          <img class="icon-32" src="/icons/filters.svg" />
+        </button>
+      </div>
+    </header>
+    <main class="main-container">
+      <div class="list-container"></div>
+      <div class="page-info-container">
+        <p></p>
+        <div class="pagination-container">
+          <button id="first-page-btn" class="btn btn-icon">
+            <img src="/icons/first_page.svg" />
+          </button>
+          <button id="previous-page-btn" class="btn btn-icon">
+            <img src="/icons/arrow_back.svg" />
+          </button>
+          <p id="page-nr" class="page-number"></p>
+          <button id="next-page-btn" class="btn btn-icon">
+            <img src="/icons/arrow_forward.svg" />
+          </button>
+          <button id="last-page-btn" class="btn btn-icon">
+            <img src="/icons/last_page.svg" />
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <nav class="navigation">
+        <ul>
+          <li>
+            <a class="link-btn link-btn-nav" href="/home/">
+              <img class="icon-30" src="/icons/home.svg" />
+            </a>
+          </li>
+          <li>
+            <a class="link-btn link-btn-nav" href="/contact/">
+              <img class="icon-32" src="/icons/contact.svg" />
+            </a>
+          </li>
+          <li>
+            <button class="link-btn link-btn-nav" id="subnavigation-trigger">
+              <img class="icon-30" src="/icons/properties.svg" />
+            </button>
+            <div popover="manual" id="subnavigation">
+              <ul class="subnavigation-panel">
+                <li>
+                  <a class="link-btn" href="/realestates/?usage=rent"
+                    >For rent
+                  </a>
+                </li>
+                <li>
+                  <a class="link-btn" href="/realestates/?usage=buy">
+                    For sell
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+    <dialog id="filters-dialog" class="filters-dialog">
+      <form class="filters">
+        <div class="filters-header">
+          <h2 class="filters-title">Filters</h2>
+          <button
+            id="filters-dialog-dismiss"
+            type="button"
+            class="btn btn-icon"
+          >
+            <img src="/icons/close.svg" />
+          </button>
+        </div>
+        <div class="filters-main">
+          <section id="sorting-section" class="filters-section section">
+            <div class="section-header">
+              <h3 class="section-title">Sorting</h3>
+              <button type="button" class="btn btn-icon section-toggle">
+                <img src="/icons/arrow_up.svg" />
+              </button>
+            </div>
+            <div class="section-content">
+              <div class="radio-group">
+                <div class="radio-instance">
+                  <input
+                    type="radio"
+                    id="sorting-name-asc"
+                    name="sorting"
+                    value="name-asc"
+                  />
+                  <label for="sorting-name-asc">Name ascending</label>
+                </div>
+                <div class="radio-instance">
+                  <input
+                    type="radio"
+                    id="sorting-name-desc"
+                    name="sorting"
+                    value="name-desc"
+                  />
+                  <label for="sorting-name-desc">Name descending</label>
+                </div>
+                <div class="radio-instance">
+                  <input
+                    type="radio"
+                    id="sorting-price-asc"
+                    name="sorting"
+                    value="price-asc"
+                  />
+                  <label for="sorting-price-asc">Price ascending</label>
+                </div>
+                <div class="radio-instance">
+                  <input
+                    type="radio"
+                    id="sorting-price-desc"
+                    name="sorting"
+                    value="price-desc"
+                  />
+                  <label for="sorting-price-desc">Price descending</label>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="usage-section" class="filters-section section">
+            <div class="section-header">
+              <h3 class="section-title">Usage purpose</h3>
+              <button type="button" class="btn btn-icon section-toggle">
+                <img src="/icons/arrow_up.svg" />
+              </button>
+            </div>
+            <div class="section-content">
+              <div class="radio-group">
+                <div class="radio-instance">
+                  <input type="radio" id="usage-buy" name="usage" value="buy" />
+                  <label for="usage-buy">Buy</label>
+                </div>
+                <div class="radio-instance">
+                  <input
+                    type="radio"
+                    id="usage-rent"
+                    name="usage"
+                    value="rent"
+                  />
+                  <label for="usage-rent">Rent</label>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="category-section" class="filters-section section">
+            <div class="section-header">
+              <h3 class="section-title">Category</h3>
+              <button type="button" class="btn btn-icon section-toggle">
+                <img src="/icons/arrow_up.svg" />
+              </button>
+            </div>
+            <div id="category-chips" class="section-content">
+              <div class="chips-container"></div>
+            </div>
+          </section>
+
+          <section id="location-section" class="filters-section section">
+            <div class="section-header">
+              <h3 class="section-title">Location</h3>
+              <button type="button" class="btn btn-icon section-toggle">
+                <img src="/icons/arrow_up.svg" />
+              </button>
+            </div>
+            <div id="location-chips" class="section-content"></div>
+          </section>
+
+          <section id="price-section" class="filters-section section">
+            <div class="section-header">
+              <h3 class="section-title">Price</h3>
+              <button type="button" class="btn btn-icon section-toggle">
+                <img src="/icons/arrow_up.svg" />
+              </button>
+            </div>
+            <div class="section-content"></div>
+          </section>
+
+          <section id="size-section" class="filters-section section">
+            <div class="section-header">
+              <h3 class="section-title">Size</h3>
+              <button type="button" class="btn btn-icon section-toggle">
+                <img src="/icons/arrow_up.svg" />
+              </button>
+            </div>
+            <div class="section-content"></div>
+          </section>
+        </div>
+        <div class="filters-footer">
+          <button id="filters-dialog-clear" type="button" class="btn btn-clear">
+            Clear All
+          </button>
+          <button
+            id="filters-dialog-apply"
+            type="button"
+            class="link-btn link-btn-green btn-submit"
+          >
+            Apply
+          </button>
+        </div>
+      </form>
+    </dialog>
+    <script type="module" src="./index.ts"></script>
+  </body>
+</html>

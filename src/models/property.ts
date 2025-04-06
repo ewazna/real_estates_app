@@ -1,26 +1,20 @@
-import { Category } from "./index";
-
-export type Amenities =
-  | "petsAllowed"
-  | "thermostat"
-  | "dishwasher"
-  | "balcony"
-  | "AC"
-  | "energySaving"
-  | "garage"
-  | "babyBedroom"
-  | "fireplace";
+import { Amenity } from "./amenities-enum";
+import { Category, UsagePurpose } from "./index";
 
 export interface Property {
   id: string;
   name: string;
+  agent: string;
   address: string;
-  type: "rent" | "buy";
+  location: string;
+  coordinates: [number, number];
+  usage: UsagePurpose;
   category: Category;
   size: number;
   price: number;
   bedrooms: number;
-  amenities: { [key in Amenities]: boolean };
+  bathrooms: number;
+  amenities: { [key in Amenity]: boolean };
   photos: string[];
   description: string;
 }

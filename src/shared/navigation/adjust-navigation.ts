@@ -1,33 +1,69 @@
-import { isWideScreen } from "../utils/is-wide-screen";
-
 export function adjustNavigation() {
   const navButtons = document.querySelectorAll(
     ".navigation .link-btn.link-btn-nav",
   );
 
-  if (isWideScreen()) {
-    const homeParagraph = document.createElement("span");
-    homeParagraph.innerText = "Home";
-    navButtons[0].append(homeParagraph);
-    const homeIcon = navButtons[0].querySelector("img");
-    homeIcon?.setAttribute("src", "/icons/home_primary.svg");
+  const wideScreenBreakpoint = window.matchMedia("(min-width: 768px)");
 
-    const contactParagraph = document.createElement("span");
-    contactParagraph.innerText = "Contact";
-    navButtons[1].append(contactParagraph);
-    const contactIcon = navButtons[1].querySelector("img");
-    contactIcon?.setAttribute("src", "/icons/contact_primary.svg");
+  const toggleAdditionalText = (matches: boolean) => {
+    if (matches) {
+      const homeParagraph = document.createElement("span");
+      homeParagraph.innerText = "Home";
+      navButtons[0].append(homeParagraph);
+      const homeIcon = navButtons[0].querySelector("img") as HTMLImageElement;
+      homeIcon.setAttribute("src", "/icons/home_primary.svg");
 
-    const mapParagraph = document.createElement("span");
-    mapParagraph.innerText = "Map";
-    navButtons[2].append(mapParagraph);
-    const mapIcon = navButtons[2].querySelector("img");
-    mapIcon?.setAttribute("src", "/icons/map_primary.svg");
+      const contactParagraph = document.createElement("span");
+      contactParagraph.innerText = "Contact";
+      navButtons[1].append(contactParagraph);
+      const contactIcon = navButtons[1].querySelector(
+        "img",
+      ) as HTMLImageElement;
+      contactIcon.setAttribute("src", "/icons/contact_primary.svg");
 
-    const propertiesParagraph = document.createElement("span");
-    propertiesParagraph.innerText = "Properties";
-    navButtons[3].append(propertiesParagraph);
-    const propertiesIcon = navButtons[3].querySelector("img");
-    propertiesIcon?.setAttribute("src", "/icons/properties_primary.svg");
-  }
+      const propertiesParagraph = document.createElement("span");
+      propertiesParagraph.innerText = "Properties";
+      navButtons[2].append(propertiesParagraph);
+      const propertiesIcon = navButtons[2].querySelector(
+        "img",
+      ) as HTMLImageElement;
+      propertiesIcon.setAttribute("src", "/icons/properties_primary.svg");
+    } else {
+      const homeParagraph = navButtons[0].querySelector(
+        "span",
+      ) as HTMLSpanElement;
+
+      const homeIcon = navButtons[0].querySelector("img") as HTMLImageElement;
+      homeIcon.setAttribute("src", "/icons/home.svg");
+
+      const contactParagraph = navButtons[1].querySelector(
+        "span",
+      ) as HTMLSpanElement;
+      const contactIcon = navButtons[1].querySelector(
+        "img",
+      ) as HTMLImageElement;
+      contactIcon.setAttribute("src", "/icons/contact.svg");
+
+      const propertiesParagraph = navButtons[2].querySelector(
+        "span",
+      ) as HTMLSpanElement;
+      const propertiesIcon = navButtons[2].querySelector(
+        "img",
+      ) as HTMLImageElement;
+      propertiesIcon.setAttribute("src", "/icons/properties.svg");
+
+      if (!homeParagraph && !contactParagraph && !propertiesParagraph) {
+        return;
+      }
+      homeParagraph.remove();
+      contactParagraph.remove();
+      propertiesParagraph.remove();
+    }
+  };
+
+  toggleAdditionalText(wideScreenBreakpoint.matches);
+
+  wideScreenBreakpoint.onchange = (e) => {
+    toggleAdditionalText(e.matches);
+  };
 }

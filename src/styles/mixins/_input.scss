@@ -11,7 +11,7 @@
   font-size: 1.2rem;
   flex-grow: 1;
   background-color: $bgColor;
-  color: $color;
+  color: colors.$black;
 
   &:hover {
     outline-offset: -4px;

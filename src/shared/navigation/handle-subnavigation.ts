@@ -1,5 +1,3 @@
-import { isWideScreen } from "../utils/is-wide-screen";
-
 type SubnavigationAction = "show" | "hide" | "toggle";
 type SubnavigationDirection = "up" | "down";
 
@@ -9,34 +7,56 @@ export function handleSubnavigation(): void {
   ) as HTMLElement;
   const panel = document.querySelector("#subnavigation") as HTMLElement;
 
-  if (isWideScreen()) {
-    trigger.addEventListener("mouseenter", (event) =>
-      setSubnavigationState(event, "show", "down"),
-    );
+  const wideScreenBreakpoint = window.matchMedia("(min-width: 768px)");
 
-    trigger.addEventListener("mouseleave", (event) => {
-      const movedIntoPanel =
-        panel &&
-        event.relatedTarget &&
-        panel.contains(event.relatedTarget as Node);
+  const handleTriggerEnter = (event: MouseEvent) => {
+    setSubnavigationState(event, "show", "down");
+  };
 
-      if (movedIntoPanel) {
-        return;
-      }
-      setSubnavigationState(event, "hide", "down");
-    });
+  const handleTriggerLeave = (event: MouseEvent) => {
+    const movedIntoPanel =
+      panel &&
+      event.relatedTarget &&
+      panel.contains(event.relatedTarget as Node);
 
-    panel.addEventListener("mouseleave", (event) => {
-      if (trigger.contains(event.relatedTarget as Node)) {
-        return;
-      }
-      setSubnavigationState(event, "hide", "down");
-    });
-  } else {
-    trigger.addEventListener("click", (event) =>
-      setSubnavigationState(event, "toggle", "up"),
-    );
-  }
+    if (movedIntoPanel) {
+      return;
+    }
+    setSubnavigationState(event, "hide", "down");
+  };
+
+  const handleTriggerClick = (event: MouseEvent) => {
+    setSubnavigationState(event, "toggle", "up");
+  };
+
+  const handlePanelLeave = (event: MouseEvent) => {
+    if (trigger.contains(event.relatedTarget as Node)) {
+      return;
+    }
+    setSubnavigationState(event, "hide", "down");
+  };
+
+  const togglePopoverPlacement = (matches: boolean) => {
+    if (matches) {
+      trigger.addEventListener("mouseenter", handleTriggerEnter);
+      trigger.addEventListener("mouseleave", handleTriggerLeave);
+      panel.addEventListener("mouseleave", handlePanelLeave);
+
+      trigger.removeEventListener("click", handleTriggerClick);
+    } else {
+      trigger.addEventListener("click", handleTriggerClick);
+
+      trigger.removeEventListener("mouseenter", handleTriggerEnter);
+      trigger.removeEventListener("mouseleave", handleTriggerLeave);
+      panel.removeEventListener("mouseleave", handlePanelLeave);
+    }
+  };
+
+  togglePopoverPlacement(wideScreenBreakpoint.matches);
+
+  wideScreenBreakpoint.onchange = (e) => {
+    togglePopoverPlacement(e.matches);
+  };
 }
 
 function setSubnavigationState(
