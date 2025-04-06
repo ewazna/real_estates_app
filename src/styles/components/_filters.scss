@@ -27,7 +27,7 @@
 
 .backdrop {
   background-color: colors.$black;
-  opacity: 60%;
+  opacity: 0.6;
   width: 100%;
   height: 100%;
 }
@@ -35,15 +35,14 @@
 .filters {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-content: center;
+  place-content: center flex-end;
   width: 100%;
   max-height: calc(100vh - 50px);
   overflow: hidden;
   padding: 10px;
   border-radius: 10px 10px 0 0;
   background-color: colors.$grey;
-  filter: drop-shadow(0 0 2mm rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0 0 2mm rgb(0 0 0 / 15%));
 }
 
 .filters-title {
@@ -78,7 +77,7 @@
   margin-bottom: 10px;
   padding: 0 10px;
   background-color: colors.$white;
-  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0 2px 2px rgb(0 0 0 / 15%));
 }
 
 .section {
@@ -122,7 +121,7 @@
     align-items: center;
     border-color: colors.$black-lighter;
     border-style: solid;
-    border-width: 1px 0 0 0;
+    border-width: 1px 0 0;
     width: 100%;
     margin: 0;
     padding: 15px 0;
@@ -131,6 +130,7 @@
       padding: 5px 0 5px 5px;
       border-width: 0;
     }
+
     &:last-of-type {
       padding: 5px 0 0 5px;
     }
@@ -149,6 +149,7 @@
 
   .subsection-content {
     display: none;
+
     &.open {
       display: flex;
     }
@@ -159,12 +160,12 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 5px 30px 20px 30px;
+  padding: 5px 30px 20px;
   height: 60px;
 }
 
 button.btn-submit {
-  padding: 0.5em 3em 0.5em;
+  padding: 0.5em 3em;
   margin: 0;
 }
 
@@ -190,7 +191,6 @@ button.btn-submit {
     background-color: transparent;
     font-size: 0.8rem;
     font-weight: 300;
-
     cursor: pointer;
 
     &.on {
@@ -209,11 +209,7 @@ button.btn-submit {
 .slider-container {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-    "slider slider"
-    "from to";
+  grid-template: "slider slider" 1fr "from to" 1fr / 1fr 1fr;
 
   .range-from {
     margin: 5px;
@@ -231,7 +227,7 @@ button.btn-submit {
   }
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .filters-dialog {
     width: 70vw;
     margin-bottom: auto;
@@ -239,8 +235,6 @@ button.btn-submit {
   }
 
   .slider-container {
-    grid-template-rows: 1fr;
-    grid-template-columns: 100px 1fr 100px;
-    grid-template-areas: "from slider to";
+    grid-template: "from slider to" 1fr / 100px 1fr 100px;
   }
 }

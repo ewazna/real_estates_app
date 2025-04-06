@@ -1,7 +1,7 @@
 @use "../fonts";
 @use "../colors";
 
-@mixin backgroundImage($url, $imgPositon, $bgColor) {
+@mixin background-wth-image($url, $imgPositon, $bgColor) {
   margin: 0;
   width: 100%;
   height: 100%;

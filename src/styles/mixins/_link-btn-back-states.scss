@@ -6,6 +6,7 @@
     outline: 2px solid colors.$white-transparent;
     border-radius: 100%;
   }
+
   &:focus-visible {
     outline-offset: 0;
     outline: 3px solid colors.$white;

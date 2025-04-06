@@ -118,7 +118,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .gallery-container {
     padding: 2% 0;
   }

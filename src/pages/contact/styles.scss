@@ -1,18 +1,13 @@
 @use "../../styles/global";
-@use "../../styles/components/link-btn.scss";
-@use "../../styles/components/icon.scss";
-@use "../../styles/components/navigation.scss";
+@use "../../styles/components/link-btn";
+@use "../../styles/components/icon";
+@use "../../styles/components/navigation";
 @use "../../styles/mixins/link-btn-back-states";
 
 body {
   overflow: hidden;
   display: grid;
-  grid-template-columns: 2fr 3fr;
-  grid-template-rows: 58px 1fr 56px;
-  grid-template-areas:
-    "header header"
-    "main main"
-    "footer footer";
+  grid-template: "header header" 58px "main main" 1fr "footer footer" 56px / 2fr 3fr;
 }
 
 .header-container {
@@ -26,7 +21,7 @@ body {
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
-    padding: 8px 8px 0 8px;
+    padding: 8px 8px 0;
 
     .title {
       font-family: global.$raleway;
@@ -40,14 +35,23 @@ body {
 }
 
 .link-btn-back {
-  margin: 0 8px 0 8px;
+  margin: 0 8px;
   padding: 0;
 
-  @include link-btn-back-states.link-btn-back-states();
+  @include link-btn-back-states.link-btn-back-states;
 
   .icon-back {
     filter: invert(100%) brightness(200%);
   }
+}
+
+p {
+  font-family: global.$raleway;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5em;
+  width: 100%;
+  margin: 0.2em 0;
 }
 
 .main-container {
@@ -69,7 +73,7 @@ body {
       width: 100%;
       height: 100%;
       border-radius: 5px;
-      filter: drop-shadow(0 4px 2px rgba(0, 0, 0, 0.25));
+      filter: drop-shadow(0 4px 2px rgb(0 0 0 / 25%));
       border: none;
     }
   }
@@ -79,7 +83,7 @@ body {
     width: 100%;
     padding: 10px 40px;
     flex: 0 0;
-    filter: drop-shadow(0 0 2mm rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(0 0 2mm rgb(0 0 0 / 15%));
 
     .adress-container {
       margin-bottom: 15px;
@@ -98,6 +102,7 @@ body {
         }
       }
     }
+
     .agents-container {
       display: grid;
       grid-template-columns: 30% 70%;
@@ -124,16 +129,7 @@ body {
   z-index: 1;
 }
 
-p {
-  font-family: global.$raleway;
-  font-weight: 300;
-  font-size: 1rem;
-  line-height: 1.5em;
-  width: 100%;
-  margin: 0.2em 0;
-}
-
-@media (min-width: 768px) {
+@media (width >= 768px) {
   body {
     background-color: global.$primary;
     grid-template-rows: 56px 1fr 58px;

@@ -36,7 +36,7 @@ npm run compile
 
 ### To check project files:
 
-For eslint lintering run:
+For Eslint and Stylelint lintering of .ts and .scss files run:
 
 ```
 npm run lint

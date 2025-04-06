@@ -22,7 +22,6 @@
   width: 120px;
   background-color: colors.$primary;
   margin: 0;
-  padding: 0;
   border: none;
   border-radius: 5px 5px 0 0;
   padding: 0 0.5em;
@@ -65,13 +64,13 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .navigation {
     position: absolute;
     top: 0;
     padding: 0 20%;
     background-color: colors.$white;
-    filter: drop-shadow(0 8px 4px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(0 8px 4px rgb(0 0 0 / 15%));
 
     .link-btn-nav {
       border-radius: 0%;
